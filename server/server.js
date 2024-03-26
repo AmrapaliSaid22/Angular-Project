@@ -8,7 +8,7 @@ app.use(bodyparser.urlencoded({extended: false}));
 app.use(bodyparser.json());
 app.use(cors({ origin: true, credentials: true }));
 
-const stripe = require("stripe")('sk_test_51NGQ9TSHAh0sAbGoIsxHWlPSOSykgI2KPRgN4tocud2oDnl7sSqQAcQnUeA68jhLdGRH7dSEajYZCdxGob9mnk4Z0092wOjE45');
+const stripe = require("stripe")(''); //url
 
 app.post("/checkout", async (req,res,next) => {
     try {
